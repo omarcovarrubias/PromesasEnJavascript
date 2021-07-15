@@ -11,7 +11,7 @@ setTimeout(() => {
 console.log('3. El resultado es :'+x);
 */
 //PROMESA
-
+let x=10;
 const promesa= new Promise((resolve,reject)=>{
     console.log('1.proceso iniciado...');
     setTimeout(() => {
@@ -22,4 +22,7 @@ const promesa= new Promise((resolve,reject)=>{
 });
 promesa.then(res=>{
   console.log('3. El resultado es :'+ res)  ;
-});
+})
+.catch(error=>{
+    console.log('error:'+error)
+    });
